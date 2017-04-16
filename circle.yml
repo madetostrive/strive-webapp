@@ -5,6 +5,7 @@ machine:
 dependencies:
   pre:
     - pip install awsebcli
+    - pip install -r app/requirements.txt
 
 deployment:
   production:
