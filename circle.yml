@@ -1,0 +1,14 @@
+machine:
+  php:
+    version: 7.0.4
+
+dependencies:
+  pre:
+    - pip install awsebcli
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bash ./setup-eb.sh
+      - eb deploy strive-webapp-dev
