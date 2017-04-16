@@ -13,5 +13,5 @@ deployment:
     commands:
       - bash ./setup-eb.sh
       - eb deploy strive-webapp-dev
-      - export FLASK_APP=application.py
+      - export FLASK_APP=main.py
       - flask run
