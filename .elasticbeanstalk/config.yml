@@ -1,0 +1,12 @@
+branch-defaults:
+  default:
+    environment: strive-webapp-dev
+  master:
+    environment: strive-webapp-dev
+global:
+  application_name: strive-webapp
+  default_ec2_keyname: strive-webapp-dev
+  default_platform: python2.7
+  default_region: us-east-1
+  profile: eb-cli-strive
+  sc: git
