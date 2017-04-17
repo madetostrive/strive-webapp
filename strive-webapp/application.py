@@ -8,13 +8,25 @@ from flask import render_template
 application = Flask(__name__)
 
 @application.route('/')
-def random():
-    name = 'My Name'
-    return render_template('index.html', name=name)
+def index():
+    return render_template('index.html')
 
-# run the app.
+@application.route('/think')
+def think():
+    return render_template('think.html')
+
+@application.route('/choosing')
+def choosing():
+    return render_template('choosing.html')
+
+@application.route('/finaid')
+def finaid():
+    return render_template('finaid.html')
+
+@application.route('/testing')
+def testing():
+    return render_template('testing.html')
+
 if __name__ == "__main__":
-    # Setting debug to True enables debug output. This line should be
-    # removed before deploying a production app.
     application.debug = True
     application.run()
