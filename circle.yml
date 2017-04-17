@@ -5,7 +5,6 @@ machine:
 dependencies:
   pre:
     - pip install awsebcli
-    - pip install -r app/requirements.txt
 
 deployment:
   production:
@@ -13,5 +12,6 @@ deployment:
     commands:
       - bash ./setup-eb.sh
       - eb deploy strive-webapp-dev
+      - pip install -r app/requirements.txt
       - export FLASK_APP=main.py
       - flask run
