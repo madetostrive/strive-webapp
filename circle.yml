@@ -11,5 +11,4 @@ deployment:
     branch: master
     commands:
       - bash ./setup-eb.sh
-      - cd ./strive-webapp
-      - eb deploy strive-webapp-dev
+      - (cd /strive-webapp && exec eb deploy strive-webapp-dev)
