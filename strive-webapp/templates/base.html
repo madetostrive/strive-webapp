@@ -25,16 +25,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="/">Home</a>
           <a class="navbar-brand" href="http://www.madetostrive.com">Made To Strive</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Overview</a></li>
+            <!-- <li class="active"><a href="#">Overview</a></li>
             <li><a href="/think">How To Think About College</a></li>
             <li><a href="/choosing">Choosing College</a></li>
             <li><a href="/finaid">Financial Aid</a></li>
             <li><a href="/testing">Testing</a></li>
-             <li><a href="#contact">Essay Writing</a></li>
+            <li><a href="#contact">Essay Writing</a></li> -->
 
 
           </ul>
@@ -43,27 +44,10 @@
     </nav>
 
     <div class="container">
-
-      <div class="starter-template">
-        <h1>Welcome To Strive!</h1>
-        <p class="lead">Ready to get started?</p>
-      </div>
-
+    {% block content %}{% endblock %}
     </div><!-- /.container -->
     
     
-   
-    <hr>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul>
-        {% for message in messages %}
-            <li>{{ message }} </li>
-        {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
-    {% block content %}{% endblock %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
