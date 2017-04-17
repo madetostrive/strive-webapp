@@ -2,6 +2,8 @@ branch-defaults:
   default:
     environment: strive-webapp-dev
     group_suffix: null
+  master:
+    environment: strive-webapp-dev
 global:
   application_name: strive-webapp
   branch: null
