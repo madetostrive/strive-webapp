@@ -13,4 +13,4 @@ deployment:
       - bash ./setup-eb.sh
       - eb deploy strive-webapp-dev
       - pip install -r app/requirements.txt
-      - flask run
+      - python main.py
